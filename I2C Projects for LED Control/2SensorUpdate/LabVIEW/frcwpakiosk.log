@@ -1,0 +1,73 @@
+2015-04-04 15:49:28,908 INFO [AWT-EventQueue-0] f.t.FRC_Team_Kiosk [FRC_Team_Kiosk.java:565] Starting kiosk...
+2015-04-04 15:49:49,919 ERROR [SwingWorker-pool-2-thread-1] f.HostComputer [HostComputer.java:591] ARP cache flush command exit status: 1
+2015-04-04 15:49:50,179 ERROR [SwingWorker-pool-2-thread-1] f.HostComputer [HostComputer.java:332] IP change exit status: 1
+2015-04-04 15:50:01,319 ERROR [SwingWorker-pool-2-thread-1] f.RadioConfigSequence [RadioConfigSequence.java:258] Bridge sequence failed: Failed to change IP address
+frcradiokiosk.HostException: Failed to change IP address
+	at frcradiokiosk.HostComputer.changeIpAddress(HostComputer.java:352) ~[FRCWpaKiosk.jar:12.5.14.119]
+	at frcradiokiosk.RadioConfigSequence.program(RadioConfigSequence.java:170) [FRCWpaKiosk.jar:12.5.14.119]
+	at frcradiokiosk.RadioConfigSequence.doInBackground(RadioConfigSequence.java:134) [FRCWpaKiosk.jar:12.5.14.119]
+	at frcradiokiosk.RadioConfigSequence$1.doInBackground(RadioConfigSequence.java:40) [FRCWpaKiosk.jar:12.5.14.119]
+	at javax.swing.SwingWorker$1.call(Unknown Source) [na:1.8.0_31]
+	at java.util.concurrent.FutureTask.run(Unknown Source) [na:1.8.0_31]
+	at javax.swing.SwingWorker.run(Unknown Source) [na:1.8.0_31]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source) [na:1.8.0_31]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source) [na:1.8.0_31]
+	at java.lang.Thread.run(Unknown Source) [na:1.8.0_31]
+Caused by: frcradiokiosk.HostException: IP address not changed
+	at frcradiokiosk.HostComputer.changeIpAddress(HostComputer.java:342) ~[FRCWpaKiosk.jar:12.5.14.119]
+	... 9 common frames omitted
+2015-04-04 15:50:05,705 INFO [AWT-EventQueue-0] f.t.FRC_Team_Kiosk [FRC_Team_Kiosk.java:183] Radio configuration failed for team 3958; Failed to change IP address
+2015-04-04 15:51:00,349 ERROR [SwingWorker-pool-2-thread-2] f.HostComputer [HostComputer.java:591] ARP cache flush command exit status: 1
+2015-04-04 15:51:00,662 ERROR [SwingWorker-pool-2-thread-2] f.HostComputer [HostComputer.java:332] IP change exit status: 1
+2015-04-04 15:51:11,872 ERROR [SwingWorker-pool-2-thread-2] f.RadioConfigSequence [RadioConfigSequence.java:258] Bridge sequence failed: Failed to change IP address
+frcradiokiosk.HostException: Failed to change IP address
+	at frcradiokiosk.HostComputer.changeIpAddress(HostComputer.java:352) ~[FRCWpaKiosk.jar:12.5.14.119]
+	at frcradiokiosk.RadioConfigSequence.program(RadioConfigSequence.java:170) [FRCWpaKiosk.jar:12.5.14.119]
+	at frcradiokiosk.RadioConfigSequence.doInBackground(RadioConfigSequence.java:134) [FRCWpaKiosk.jar:12.5.14.119]
+	at frcradiokiosk.RadioConfigSequence$1.doInBackground(RadioConfigSequence.java:40) [FRCWpaKiosk.jar:12.5.14.119]
+	at javax.swing.SwingWorker$1.call(Unknown Source) [na:1.8.0_31]
+	at java.util.concurrent.FutureTask.run(Unknown Source) [na:1.8.0_31]
+	at javax.swing.SwingWorker.run(Unknown Source) [na:1.8.0_31]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source) [na:1.8.0_31]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source) [na:1.8.0_31]
+	at java.lang.Thread.run(Unknown Source) [na:1.8.0_31]
+Caused by: frcradiokiosk.HostException: IP address not changed
+	at frcradiokiosk.HostComputer.changeIpAddress(HostComputer.java:342) ~[FRCWpaKiosk.jar:12.5.14.119]
+	... 9 common frames omitted
+2015-04-04 15:51:15,191 INFO [AWT-EventQueue-0] f.t.FRC_Team_Kiosk [FRC_Team_Kiosk.java:183] Radio configuration failed for team 3958; Failed to change IP address
+2015-04-04 15:53:11,168 ERROR [SwingWorker-pool-2-thread-3] f.HostComputer [HostComputer.java:591] ARP cache flush command exit status: 1
+2015-04-04 15:53:11,380 ERROR [SwingWorker-pool-2-thread-3] f.HostComputer [HostComputer.java:332] IP change exit status: 1
+2015-04-04 15:53:22,545 ERROR [SwingWorker-pool-2-thread-3] f.RadioConfigSequence [RadioConfigSequence.java:258] Bridge sequence failed: Failed to change IP address
+frcradiokiosk.HostException: Failed to change IP address
+	at frcradiokiosk.HostComputer.changeIpAddress(HostComputer.java:352) ~[FRCWpaKiosk.jar:12.5.14.119]
+	at frcradiokiosk.RadioConfigSequence.program(RadioConfigSequence.java:170) [FRCWpaKiosk.jar:12.5.14.119]
+	at frcradiokiosk.RadioConfigSequence.doInBackground(RadioConfigSequence.java:134) [FRCWpaKiosk.jar:12.5.14.119]
+	at frcradiokiosk.RadioConfigSequence$1.doInBackground(RadioConfigSequence.java:40) [FRCWpaKiosk.jar:12.5.14.119]
+	at javax.swing.SwingWorker$1.call(Unknown Source) [na:1.8.0_31]
+	at java.util.concurrent.FutureTask.run(Unknown Source) [na:1.8.0_31]
+	at javax.swing.SwingWorker.run(Unknown Source) [na:1.8.0_31]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source) [na:1.8.0_31]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source) [na:1.8.0_31]
+	at java.lang.Thread.run(Unknown Source) [na:1.8.0_31]
+Caused by: frcradiokiosk.HostException: IP address not changed
+	at frcradiokiosk.HostComputer.changeIpAddress(HostComputer.java:342) ~[FRCWpaKiosk.jar:12.5.14.119]
+	... 9 common frames omitted
+2015-04-04 15:53:30,665 INFO [AWT-EventQueue-0] f.t.FRC_Team_Kiosk [FRC_Team_Kiosk.java:183] Radio configuration failed for team 3958; Failed to change IP address
+2015-04-04 15:55:27,857 ERROR [SwingWorker-pool-2-thread-4] f.HostComputer [HostComputer.java:591] ARP cache flush command exit status: 1
+2015-04-04 15:55:28,053 ERROR [SwingWorker-pool-2-thread-4] f.HostComputer [HostComputer.java:332] IP change exit status: 1
+2015-04-04 15:55:39,130 ERROR [SwingWorker-pool-2-thread-4] f.RadioConfigSequence [RadioConfigSequence.java:258] Bridge sequence failed: Failed to change IP address
+frcradiokiosk.HostException: Failed to change IP address
+	at frcradiokiosk.HostComputer.changeIpAddress(HostComputer.java:352) ~[FRCWpaKiosk.jar:12.5.14.119]
+	at frcradiokiosk.RadioConfigSequence.program(RadioConfigSequence.java:170) [FRCWpaKiosk.jar:12.5.14.119]
+	at frcradiokiosk.RadioConfigSequence.doInBackground(RadioConfigSequence.java:134) [FRCWpaKiosk.jar:12.5.14.119]
+	at frcradiokiosk.RadioConfigSequence$1.doInBackground(RadioConfigSequence.java:40) [FRCWpaKiosk.jar:12.5.14.119]
+	at javax.swing.SwingWorker$1.call(Unknown Source) [na:1.8.0_31]
+	at java.util.concurrent.FutureTask.run(Unknown Source) [na:1.8.0_31]
+	at javax.swing.SwingWorker.run(Unknown Source) [na:1.8.0_31]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source) [na:1.8.0_31]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source) [na:1.8.0_31]
+	at java.lang.Thread.run(Unknown Source) [na:1.8.0_31]
+Caused by: frcradiokiosk.HostException: IP address not changed
+	at frcradiokiosk.HostComputer.changeIpAddress(HostComputer.java:342) ~[FRCWpaKiosk.jar:12.5.14.119]
+	... 9 common frames omitted
+2015-04-04 15:56:12,378 INFO [AWT-EventQueue-0] f.t.FRC_Team_Kiosk [FRC_Team_Kiosk.java:183] Radio configuration failed for team 3958; Failed to change IP address
