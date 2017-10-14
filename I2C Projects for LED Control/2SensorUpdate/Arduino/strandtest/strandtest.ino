@@ -17,9 +17,9 @@ Adafruit_NeoPixel strip = Adafruit_NeoPixel(30, PIN, NEO_GRB + NEO_KHZ800);
 // and minimize distance between Arduino and first pixel.  Avoid connecting
 // on a live circuit...if you must, connect GND first.
 
-int ledlevel = 0; 
+int ledlevel = 30; 
 int brightness = 0; 
-int R = 0; 
+int R = 255; 
 int G = 0; 
 int B = 0; 
 int R_Off = 0; 
@@ -38,10 +38,6 @@ void setup() {
 
 void loop() {
   // Some example procedures showing how to display to the pixels:
-  colorWipe(strip.Color(R, G, B), 1); //Green
-  
- Serial.print("Looping");
- Serial.print(ledlevel); 
 }
 
 // Fill the dots one after the other with a color
@@ -65,7 +61,7 @@ void colorWipe(uint32_t c, uint8_t wait) {
 
 void receiveEvent(int howMany)//Receive 5 bytes
 {
- ledlevel = Wire.read();    // receive byte as an integer
+ /*ledlevel = Wire.read();    // receive byte as an integer
   R = Wire.read();
   G = Wire.read();
   B = Wire.read();  //Serial.println(x);         // print the integer
@@ -74,7 +70,23 @@ void receiveEvent(int howMany)//Receive 5 bytes
   B_Off = Wire.read(); 
   brightness = Wire.read(); 
   Serial.println("Received");
-
+*/
+/*
+  while(1< Wire.available())
+  {
+   char c = Wire.read();Serial.print(c);
+  }
+  int x = Wire.read();
+  ledlevel = x % 31;
+  */
+  uint16_t index = Wire.read();
+  Serial.println(index);
+  R = Wire.read();
+  G = Wire.read();
+  B = Wire.read();
+  strip.setPixelColor(index, R, G, B);
+  strip.show();
+  
 }
 
 
